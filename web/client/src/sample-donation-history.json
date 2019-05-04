@@ -14,9 +14,14 @@
             ],
             "allocations": [
                 {
-                    "amount": 30,
+                    "amount": 10,
                     "cause": "food",
                     "timestamp": "2012-04-23T18:25:43.511Z"
+                },
+                {
+                    "amount": 10,
+                    "cause": "food",
+                    "timestamp": "2015-04-23T18:25:43.511Z"
                 }
             ],
             "totalAllocations": {
