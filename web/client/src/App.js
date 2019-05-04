@@ -7,10 +7,14 @@ import donationHist from './sample-donation-history.json';
 let data = {
   labels: ["Fundraising", "Food", "Clothing", "Medical Supplies", "Events"],
   datasets: [{
+    legend: {
+      display: false
+    },
     backgroundColor: '#25A8FF',
     borderColor: 'rgb(255, 99, 132)',
     data: [donationHist.users[0].totalAllocations.fundraising, 10, 5, 2, 20],
   }]
+
 }
 
 function App() {
@@ -23,11 +27,15 @@ function App() {
         <div class="graph">
           <Bar
             data={data}
-            options={{ maintainAspectRatio: false }}
+            options={{
+              maintainAspectRatio: false,
+              legend: {
+                display: false
+              }
+            }}
           />
         </div>
         <div class="two">
-          John Smith
           {JSON.stringify(donationHist.users[0].user)}
         </div>
       </div>
