@@ -9,6 +9,7 @@ public class Expense extends FinancialEntry {
 
   public Expense(ExpenseType expense, int amount, Timestamp timestamp) {
      super(Math.abs(amount), timestamp);
+     this.expense = expense;
   }
 
   public ExpenseType getExpense() {
