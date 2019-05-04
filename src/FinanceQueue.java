@@ -1,4 +1,5 @@
 import java.util.*;
+import org.json.simple.*;
 
 public class FinanceQueue {
   private PriorityQueue<DonationChunk> queue;
@@ -14,13 +15,24 @@ public class FinanceQueue {
         }
       } else if (entry instanceof Expense) {
         this.remove((Expense) entry);
-      } else { //UNREACHABLE, PARSER FAILED IF ENTERING BRANCH
-        throw new IllegalArgumentException("Bad entry in FinancialEntry list");
       }
     }
   }
 
   private void remove(Expense expense) {
+    int totalExpense = expense.getAmount();
 
+    while(totalExpense > 0) {
+      DonationChunk chunk = queue.remove();
+      int chunkAmt = chunk.getAmount();
+      if (chunkAmt > totalExpense) {
+        DonationChunk toAdd = new DonationChunk(chunk.getDonator(), chunk.getTimestamp(),
+            chunkAmt - totalExpense);
+        totalExpense = 0;
+        queue.add(toAdd);
+      } else {
+        totalExpense -= chunkAmt;
+      }
+    }
   }
 }

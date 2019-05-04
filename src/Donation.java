@@ -5,9 +5,9 @@ public class Donation extends FinancialEntry{
 
     private String name;
     private int total;
-    private Timestamp date;
+    private Calendar date;
 
-    public Donation(String name, int amount, Timestamp time ){
+    public Donation(String name, int amount, Calendar time ){
         super(amount, time);
         this.name=  name;
     }
@@ -21,7 +21,7 @@ public class Donation extends FinancialEntry{
         }
 
         if(this.total != 0) {
-            chunks.add(new DonationChunk(this.name, this.date, this.copyOfTotal));
+            chunks.add(new DonationChunk(this.name, this.date, copyOfTotal));
         }
         return chunks;
     }
