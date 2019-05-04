@@ -12,7 +12,8 @@ public class Parser {
     }
 
     public static List<Object> organize(Scanner theScanner){
-
+        // have not implemented
+        throw new RuntimeException();
     }
 
     //
