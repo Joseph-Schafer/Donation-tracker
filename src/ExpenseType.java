@@ -1,0 +1,7 @@
+public enum ExpenseType {
+  FUNDRAISING,
+  FOOD,
+  CLOTHING,
+  MEDICAL_SUPPLIES,
+  EVENTS
+}
