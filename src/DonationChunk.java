@@ -1,21 +1,16 @@
-import java.sql.Timestamp;
 import java.util.*;
 
 public class DonationChunk{
 
     private String donator;
-    private Timestamp time;
-    private int amount;
+    private TIMESTAMP time;
+    private double amount;
 
-    public DonationChunk(String name, Timestamp time){
+    public DonationChunk(String name, TIMESTAMP time, double amt){
         this.donator = name;
         this.time = time;
+        this.amount = amt;
     }
 
-    public DonationChunk(String name, Timestamp time, int amount) {
-        this.donator = name;
-        this.time = time;
-        this.amount = amount;
-    }
 
 }
