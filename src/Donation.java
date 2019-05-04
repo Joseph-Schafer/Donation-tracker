@@ -21,7 +21,7 @@ public class Donation extends FinancialEntry{
         }
 
         if(this.total != 0) {
-            chunks.add(new DonationChunk(this.name, this.date, this.total));
+            chunks.add(new DonationChunk(this.name, this.date, this.copyOfTotal));
         }
         return chunks;
     }

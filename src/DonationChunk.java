@@ -16,4 +16,7 @@ public class DonationChunk extends FinancialEntry{
         this.donator = name;
     }
 
+    public String getDonator() {
+        return donator;
+    }
 }
