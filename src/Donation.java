@@ -4,8 +4,6 @@ import java.sql.Timestamp;
 public class Donation extends FinancialEntry{
 
     private String name;
-    private int total;
-    private Calendar date;
 
     public Donation(String name, int amount, Calendar time ){
         super(amount, time);
@@ -14,14 +12,14 @@ public class Donation extends FinancialEntry{
 
     public List<DonationChunk> SplitDonation(){
         List<DonationChunk> chunks = new ArrayList<DonationChunk>();
-        int copyOfTotal = this.total;
+        int copyOfTotal = this.getAmount();
         while(copyOfTotal >= 5){
-            chunks.add(new DonationChunk(this.name, this.date));
+            chunks.add(new DonationChunk(this.name, this.getTimestamp()));
             copyOfTotal -= 5;
         }
 
-        if(this.total != 0) {
-            chunks.add(new DonationChunk(this.name, this.date, copyOfTotal));
+        if(copyOfTotal != 0) {
+            chunks.add(new DonationChunk(this.name, this.getTimestamp(), copyOfTotal));
         }
         return chunks;
     }

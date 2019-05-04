@@ -4,8 +4,6 @@ import java.util.*;
 public class DonationChunk extends FinancialEntry implements Comparable<DonationChunk> {
 
     private String donator;
-    private Calendar time;
-    private int amount;
 
     public DonationChunk(String name, Calendar time){
         this(name, time, 5);
