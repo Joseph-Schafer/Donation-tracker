@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-import java.sql.Timestamp;
+import java.text.*;
 
 public class Parser {
 
@@ -9,9 +9,8 @@ public class Parser {
         Scanner scanFile = new Scanner(theFile);
         List<FinancialEntry> list = organize(scanFile);
         for (int i = 0; i < list.size(); i ++){
-            System.out.println(list.get(i));
+            System.out.println(list.get(i).getAmount());
         }
-
     }
 
     public static List<FinancialEntry> organize(Scanner theScanner){
@@ -22,8 +21,7 @@ public class Parser {
             String thisLine = theScanner.nextLine();
             String[] thisAmount = thisLine.split(",", 4);
             if (Integer.parseInt(thisAmount[2]) > 0){
-                thisObject = new Donation(thisAmount[3], Integer.parseInt(thisAmount[2]), Timestamp.valueOf(thisAmount[1]));
-
+                thisObject = new Donation(thisAmount[3], Integer.parseInt(thisAmount[2]), convertToCal(thisAmount[1]));
             }
             else {
                 //thisObject = new Expense(thisAmount[3],Integer.parseInt(thisAmount[2]), Timestamp.valueOf(thisAmount[1]));
@@ -33,21 +31,15 @@ public class Parser {
         return financialEntries;
     }
 
-    //  theScanner.next();
-
-
-    // have not implemented
-    //   throw new RuntimeException();
-
-    //
-    /*
-
-
-
-
-     */
-
-
-
-
+    public static Calendar convertToCal(String date){
+        Calendar cal = null;
+        try {
+            cal = Calendar.getInstance();
+            SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy", Locale.ENGLISH);
+            cal.setTime(sdf.parse("Mon Mar 14 16:02:37 GMT 2011"));
+        }
+        catch (Exception e){
+        }
+        return cal;
+    }
 }
