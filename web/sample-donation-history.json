@@ -1,0 +1,22 @@
+[
+    {
+        "user": "John Smith",
+        "donations": [
+            {
+                "amount": 30.00,
+                "timestamp": "2012-04-23T18:25:43.511Z"
+            },
+            {
+                "amount": 49.82,
+                "timestamp": "2012-04-23T18:25:43.511Z"
+            }
+        ],
+        "total-allocations": {
+            "fundraising": 5.00,
+            "food": 20.00,
+            "clothing": 10.00,
+            "medical-supplies": 10.00,
+            "events":0.00
+        }
+    }
+]
