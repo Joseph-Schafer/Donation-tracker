@@ -1,10 +1,11 @@
 import java.sql.Timestamp;
+import java.util.Calendar;
 
 public class FinancialEntry {
   private int amount;
-  private Timestamp timestamp;
+  private Calendar timestamp;
 
-  public FinancialEntry(int amount, Timestamp timestamp) {
+  public FinancialEntry(int amount, Calendar timestamp) {
     this.amount = amount;
     this.timestamp = timestamp;
   }
@@ -13,7 +14,7 @@ public class FinancialEntry {
     return amount;
   }
 
-  public Timestamp getTimestamp() {
+  public Calendar getTimestamp() {
     return timestamp;
   }
 
