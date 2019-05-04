@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Bar } from 'react-chartjs-2';
 import donationHist from './sample-donation-history.json';
