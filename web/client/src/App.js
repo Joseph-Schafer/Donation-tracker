@@ -5,12 +5,11 @@ import { Bar } from 'react-chartjs-2';
 import donationHist from './sample-donation-history.json';
 
 let data = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  labels: ["Fundraising", "Food", "Clothing", "Medical Supplies", "Events"],
   datasets: [{
-    label: "My First dataset",
-    backgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: '#25A8FF',
     borderColor: 'rgb(255, 99, 132)',
-    data: [0, 10, 5, 2, 20, 30, 45],
+    data: [donationHist.users[0].totalAllocations.fundraising, 10, 5, 2, 20],
   }]
 }
 

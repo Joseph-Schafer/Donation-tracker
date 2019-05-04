@@ -11,11 +11,11 @@
                 "timestamp": "2012-04-23T18:25:43.511Z"
             }
         ],
-        "total-allocations": {
+        "totalAllocations": {
             "fundraising": 5.00,
             "food": 20.00,
             "clothing": 10.00,
-            "medical-supplies": 10.00,
+            "medicalSupplies": 10.00,
             "events":0.00
         }
     }
