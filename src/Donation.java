@@ -13,7 +13,13 @@ public class Donation(){
         date = new TIMESTAMP(time);
     }
 
-    public Set<DonationChunk> SplitDonation(){
+    public List<DonationChunk> SplitDonation(){
+        List<DonationChunk> chunks = new ArrayList<DonationChunk>();
+        double copyOfTotal = this.total;
+        while(copyOfTotal >= 5.0){
+            chunks.add(new DonationChunk(this.name, this.date));
+        }
+
 
     }
 
