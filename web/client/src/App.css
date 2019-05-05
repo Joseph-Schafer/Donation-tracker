@@ -56,6 +56,8 @@
 .history {
   grid-column: 3 / 4;
   grid-row: 2 / 9;
+  overflow:auto;
+  height:350px;
 }
 .historyEvent {
   border-radius: 25px;

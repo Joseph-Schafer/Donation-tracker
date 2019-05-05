@@ -84,6 +84,26 @@ function App() {
               </Comment.Metadata>
             </Comment.Content>
           </Comment>
+          <Comment className="comment">
+            <Comment.Content>
+              <Comment.Content>
+                We used $5 of your donation for fundraising
+                </Comment.Content>
+              <Comment.Metadata>
+                <span className="time">Sept 1st 2018</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
+          <Comment className="comment">
+            <Comment.Content>
+              <Comment.Content>
+                We used $5 of your donation for fundraising
+                </Comment.Content>
+              <Comment.Metadata>
+                <span className="time">Sept 1st 2018</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
         </div>
         <div class="footer">
           <div class="fund">Fundraising</div>
