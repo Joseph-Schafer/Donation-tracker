@@ -19,7 +19,16 @@ public class DonationChunk extends FinancialEntry implements Comparable<Donation
     }
 
     public int compareTo(DonationChunk other) {
-        return -1;
+       if(other.getTimestamp().getWeekYear() != this.getTimestamp().getWeekYear() ||
+            other.getTimestamp().getWeeksInWeekYear() != this.getTimestamp().getWeeksInWeekYear()) {
+           return this.getTimestamp().compareTo(other.getTimestamp());
+       }
+
+       if(Math.random() > 0.5) {
+           return 1;
+       }
+
+       return -1;
 
     }
 }
