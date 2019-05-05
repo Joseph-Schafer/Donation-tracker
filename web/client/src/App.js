@@ -20,11 +20,11 @@ let data = {
 function App() {
   return (
     <div className="App">
-      <div>
-        <div id="totalAmount">total</div>
-        <div id="account">Account    {JSON.stringify(donationHist.users[0].user)}
-        </div>
-      </div>
+      <h1>
+        <div id="totalAmount">You've donated: $90</div>
+        <div id="account">Account</div>
+      </h1>
+
       <div class="wrapper">
 
         <div class="graph">
@@ -39,48 +39,48 @@ function App() {
           />
         </div>
 
-          <div className="history">
-            <Comment className="comment">
+        <div className="history">
+          <Comment className="comment">
+            <Comment.Content>
               <Comment.Content>
-                <Comment.Content>
                 ${JSON.stringify(donationHist.users[0].allocations[0].amount)} was used for {JSON.stringify(donationHist.users[0].allocations[0].cause).replace(/"/g, '')}
-                </Comment.Content>
-                <Comment.Metadata>
-                  <span className="time">Aug 2nd 2018</span>
-                </Comment.Metadata>
               </Comment.Content>
-            </Comment>
-            <Comment className="comment">
+              <Comment.Metadata>
+                <span className="time">Nov 2nd 2019</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
+          <Comment className="comment">
+            <Comment.Content>
               <Comment.Content>
-                <Comment.Content>
                 ${JSON.stringify(donationHist.users[0].allocations[1].amount)} was used for {JSON.stringify(donationHist.users[0].allocations[1].cause).replace(/"/g, '')}
-                </Comment.Content>
-                <Comment.Metadata>
-                  <span className="time">Aug 2nd 2018</span>
-                </Comment.Metadata>
               </Comment.Content>
-            </Comment>
-            <Comment className="comment">
+              <Comment.Metadata>
+                <span className="time">Oct 3rd 2018</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
+          <Comment className="comment">
+            <Comment.Content>
               <Comment.Content>
-                <Comment.Content>
-                  You donated $12! Thank you!
+                You donated $12! Thank you {JSON.stringify(donationHist.users[0].user).replace(/"/g, '')}!
                 </Comment.Content>
-                <Comment.Metadata>
-                  <span className="time">Aug 2nd 2018</span>
-                </Comment.Metadata>
-              </Comment.Content>
-            </Comment>
-            <Comment className="comment">
+              <Comment.Metadata>
+                <span className="time">Sept 31st 2018</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
+          <Comment className="comment">
+            <Comment.Content>
               <Comment.Content>
-                <Comment.Content>
-                  $5 was used for fundraising
+                $5 was used for fundraising
                 </Comment.Content>
-                <Comment.Metadata>
-                  <span className="time">Aug 2nd 2018</span>
-                </Comment.Metadata>
-              </Comment.Content>
-            </Comment>
-          </div>
+              <Comment.Metadata>
+                <span className="time">Sept 1st 2018</span>
+              </Comment.Metadata>
+            </Comment.Content>
+          </Comment>
+        </div>
 
         {/* <div class="history">
           <div class="historyEvent">
