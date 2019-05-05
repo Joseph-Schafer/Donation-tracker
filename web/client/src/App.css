@@ -58,6 +58,9 @@
   grid-row: 2 / 9;
   overflow:auto;
   height:350px;
+  scrollbar-width: none;
+
+  
 }
 .historyEvent {
   border-radius: 25px;

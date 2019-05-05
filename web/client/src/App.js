@@ -44,66 +44,68 @@ function App() {
         </div>
 
         <div className="history">
-          <Comment className="comment">
-            <Comment.Content>
+          <div className="historySub">
+            <Comment className="comment">
               <Comment.Content>
-                We used ${JSON.stringify(donationHist.users[0].allocations[0].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[0].cause).replace(/"/g, '')}
+                <Comment.Content>
+                  We used ${JSON.stringify(donationHist.users[0].allocations[0].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[0].cause).replace(/"/g, '')}
+                </Comment.Content>
+                <Comment.Metadata>
+                  <span className="time">Nov 2nd 2019</span>
+                </Comment.Metadata>
               </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Nov 2nd 2019</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
-          <Comment className="comment">
-            <Comment.Content>
+            </Comment>
+            <Comment className="comment">
               <Comment.Content>
-                We used ${JSON.stringify(donationHist.users[0].allocations[1].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[1].cause).replace(/"/g, '')}
+                <Comment.Content>
+                  We used ${JSON.stringify(donationHist.users[0].allocations[1].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[1].cause).replace(/"/g, '')}
+                </Comment.Content>
+                <Comment.Metadata>
+                  <span className="time">Oct 3rd 2018</span>
+                </Comment.Metadata>
               </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Oct 3rd 2018</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
-          <Comment className="comment">
-            <Comment.Content>
+            </Comment>
+            <Comment className="comment">
               <Comment.Content>
-                You donated $12! Thank you {JSON.stringify(donationHist.users[0].user).replace(/"/g, '')}!
+                <Comment.Content>
+                  You donated $12! Thank you {JSON.stringify(donationHist.users[0].user).replace(/"/g, '')}!
                 </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Sept 31st 2018</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
-          <Comment className="comment">
-            <Comment.Content>
+                <Comment.Metadata>
+                  <span className="time">Sept 31st 2018</span>
+                </Comment.Metadata>
+              </Comment.Content>
+            </Comment>
+            <Comment className="comment">
               <Comment.Content>
-                We used $5 of your donation for fundraising
+                <Comment.Content>
+                  We used $5 of your donation for fundraising
                 </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Sept 1st 2018</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
-          <Comment className="comment">
-            <Comment.Content>
+                <Comment.Metadata>
+                  <span className="time">Sept 1st 2018</span>
+                </Comment.Metadata>
+              </Comment.Content>
+            </Comment>
+            <Comment className="comment">
               <Comment.Content>
-                We used $5 of your donation for fundraising
+                <Comment.Content>
+                  We used $5 of your donation for fundraising
                 </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Sept 1st 2018</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
-          <Comment className="comment">
-            <Comment.Content>
+                <Comment.Metadata>
+                  <span className="time">Sept 1st 2018</span>
+                </Comment.Metadata>
+              </Comment.Content>
+            </Comment>
+            <Comment className="comment">
               <Comment.Content>
-                We used $5 of your donation for fundraising
+                <Comment.Content>
+                  We used $5 of your donation for fundraising
                 </Comment.Content>
-              <Comment.Metadata>
-                <span className="time">Sept 1st 2018</span>
-              </Comment.Metadata>
-            </Comment.Content>
-          </Comment>
+                <Comment.Metadata>
+                  <span className="time">Sept 1st 2018</span>
+                </Comment.Metadata>
+              </Comment.Content>
+            </Comment>
+          </div>
         </div>
         <div class="footer">
           <div class="fund">Fundraising</div>
