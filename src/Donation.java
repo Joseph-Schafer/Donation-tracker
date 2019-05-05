@@ -7,7 +7,7 @@ public class Donation extends FinancialEntry{
 
     public Donation(String name, int amount, Calendar time ){
         super(amount, time);
-        this.name=  name;
+        this.name = name;
     }
 
     public List<DonationChunk> SplitDonation(){
@@ -22,6 +22,10 @@ public class Donation extends FinancialEntry{
             chunks.add(new DonationChunk(this.name, this.getTimestamp(), copyOfTotal));
         }
         return chunks;
+    }
+
+    public String getName(){
+        return name;
     }
 
     public String toString(){
