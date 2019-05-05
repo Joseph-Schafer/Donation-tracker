@@ -34,6 +34,10 @@ function App() {
               maintainAspectRatio: false,
               legend: {
                 display: false
+              },
+              title: {
+                display: true,
+                text: 'Your Donation Portfolio'
               }
             }}
           />
@@ -43,7 +47,7 @@ function App() {
           <Comment className="comment">
             <Comment.Content>
               <Comment.Content>
-                ${JSON.stringify(donationHist.users[0].allocations[0].amount)} was used for {JSON.stringify(donationHist.users[0].allocations[0].cause).replace(/"/g, '')}
+                We used ${JSON.stringify(donationHist.users[0].allocations[0].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[0].cause).replace(/"/g, '')}
               </Comment.Content>
               <Comment.Metadata>
                 <span className="time">Nov 2nd 2019</span>
@@ -53,7 +57,7 @@ function App() {
           <Comment className="comment">
             <Comment.Content>
               <Comment.Content>
-                ${JSON.stringify(donationHist.users[0].allocations[1].amount)} was used for {JSON.stringify(donationHist.users[0].allocations[1].cause).replace(/"/g, '')}
+                We used ${JSON.stringify(donationHist.users[0].allocations[1].amount)} of your donation for {JSON.stringify(donationHist.users[0].allocations[1].cause).replace(/"/g, '')}
               </Comment.Content>
               <Comment.Metadata>
                 <span className="time">Oct 3rd 2018</span>
@@ -73,7 +77,7 @@ function App() {
           <Comment className="comment">
             <Comment.Content>
               <Comment.Content>
-                $5 was used for fundraising
+                We used $5 of your donation for fundraising
                 </Comment.Content>
               <Comment.Metadata>
                 <span className="time">Sept 1st 2018</span>
