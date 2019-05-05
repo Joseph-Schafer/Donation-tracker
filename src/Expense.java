@@ -11,7 +11,12 @@ public class Expense extends FinancialEntry {
   }
 
   public ExpenseType getExpense() {
-    return expense;
+
+      return expense;
+  }
+
+  public String toString(){
+      return ("amount: " + getAmount() + ", expense: " + expense);
   }
 
 }
