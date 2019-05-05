@@ -87,6 +87,7 @@ function App() {
           <div class="med"> Medical Supplies</div>
           <div class="cloth">Clothing</div>
           <div class="events">Events</div>
+          <div class="rest">Unspent</div>
         </div>
 
         {/* <div class="history">

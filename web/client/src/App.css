@@ -122,33 +122,40 @@
   float:left;
   display:block;
   height:50px;
-  width: 500px;
+  width: 30%;
 }
 .fund {
   background: #6494E8;
   float:left;
   display:block;
   height:50px;
-  width: 90px;
+  width: 10%;
 }
 .cloth {
   background: #6E94FF;
   float:left;
   display:block;
   height:50px;
-  width: 100px;
+  width: 20%;
 }
 .med {
   background: #6ECFFF;
   float:left;
   display:block;
   height:50px;
-  width: 100px;
+  width: 10%;
 }
 .events {
   background: #7AB8FF;
   float:left;
   display:block;
   height:50px;
-  width: 50px;
+  width: 10%;
+}
+.rest {
+  background: #6E94FF;
+  float:left;
+  display:block;
+  height:50px;
+  width: 20%;
 }
