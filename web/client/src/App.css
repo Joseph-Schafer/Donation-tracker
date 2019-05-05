@@ -104,3 +104,58 @@
 .time {
   font-size: 10px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #C9E2F5;
+  color: white;
+  height:50px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.percentage {
+  align:left;
+  width:10%;
+  float:left;
+}
+.food {
+  background: #7AB8FF;
+  float:left;
+  display:block;
+  height:50px;
+  width: 500px;
+}
+.fund {
+  background: #6494E8;
+  float:left;
+  display:block;
+  height:50px;
+  width: 50px;
+}
+.cloth {
+  background: #6E94FF;
+  float:left;
+  display:block;
+  height:50px;
+  width: 100px;
+}
+.med {
+  background: #6ECFFF;
+  float:left;
+  display:block;
+  height:50px;
+  width: 100px;
+}
+.events {
+  background: #7AB8FF;
+  float:left;
+  display:block;
+  height:50px;
+  width: 50px;
+}

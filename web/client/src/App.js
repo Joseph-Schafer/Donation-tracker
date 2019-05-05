@@ -81,6 +81,13 @@ function App() {
             </Comment.Content>
           </Comment>
         </div>
+        <div class="footer">
+          <div class="fund">Fundraising</div>
+          <div class="food">Food</div>
+          <div class="med"> Medical Supplies</div>
+          <div class="cloth">Clothing</div>
+          <div class="events">Events</div>
+        </div>
 
         {/* <div class="history">
           <div class="historyEvent">
