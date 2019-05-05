@@ -38,7 +38,7 @@ public class Parser {
                 if (thisAmount[3].equals("CLOTHING")){
                     theExpense = ExpenseType.CLOTHING;
                 }
-                if (thisAmount[3].equals("MEDICAL_SUPPLIES")){
+                if (thisAmount[3].equals("MEDICAL SUPPLIES")){
                     theExpense = ExpenseType.MEDICAL_SUPPLIES;
                 }
                 if (thisAmount[3].equals("EVENTS")){

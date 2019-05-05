@@ -23,4 +23,8 @@ public class Donation extends FinancialEntry{
         }
         return chunks;
     }
+
+    public String toString(){
+        return ("amount: " + getAmount() + ", name: " + name);
+    }
 }
